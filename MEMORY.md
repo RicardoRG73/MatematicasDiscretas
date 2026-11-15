@@ -4,31 +4,26 @@ Registro persistente del estado, decisiones y convenciones del repositorio **Mat
 
 ## Datos de la Asignatura
 
-- **Nombre:** Matemáticas Discretas
-- **Clave:** `LISSI0211`
-- **Ciclo escolar:** Segundo Semestre
-- **Horas totales:** 96 horas (64 h bajo conducción de un académico en aula + 32 h independientes)
-- **Unidades temáticas:** 6 (Sistemas Numéricos, Conjuntos, Lógica Matemática, Álgebra Booleana, Relaciones, Teoría de Grafos)
+- **Nombre:** Matemáticas Discretas | **Clave:** `LISSI0211` | **Ciclo:** Segundo Semestre
+- **Horas totales:** 96 h (64 h aula + 32 h independientes) | **Unidades:** 6
 
 ## Estado Actual del Repositorio
 
-- `README.md`: Contiene el temario oficial completo (información general, fines de aprendizaje, contenido temático, actividades de aprendizaje, criterios de evaluación y modalidades).
+- `README.md`: Temario oficial completo, actividades y criterios de evaluación vigentes.
+- `GEMINI.md` / `MEMORY.md`: Arnés del repositorio (`MEMORY.md` máx. 50 líneas).
 - `LICENSE`: Licencia del repositorio.
-- `GEMINI.md`: Reglas e instrucciones de trabajo para el agente en este repositorio.
-- `MEMORY.md`: Este archivo de memoria persistente.
+- `figuras/`: Directorio para imágenes y diagramas del curso (incluye `figuras/logos/` con logotipos institucionales).
+- `notas/`: Apuntes por unidad y subtema (`X-tema.md` y `X-Y-subtema.md`) para las 6 unidades del temario.
 
 ## Decisiones y Cambios Clave
 
-- **2026-11-15 — Transcripción del temario:** Se transcribió el contenido completo de `Temario scan.pdf` a `README.md` en formato Markdown estructurado.
-- **2026-11-15 — Criterios de evaluación:** Se reemplazaron los criterios originales del PDF por el esquema acordado para el curso:
-  - Asistencia: `10%`
-  - Prueba de desempeño: `50%`
-  - Portafolio de evidencias: `40%`
-- **2026-11-15 — Arnés del repositorio:** Se crearon `GEMINI.md` y `MEMORY.md` en la raíz del proyecto.
-- **2026-11-15 — Eliminación del PDF escaneado:** Se eliminó `Temario scan.pdf` tras transcribir su contenido; `README.md` queda como fuente única del temario oficial.
-- **2026-11-15 — Límite de `MEMORY.md`:** Este archivo debe mantenerse siempre en un máximo de 50 líneas.
+- **2026-11-15 — Temario y evaluación:** Se transcribió el temario a `README.md`, se eliminó `Temario scan.pdf` y se fijó evaluación: 10% Asistencia, 50% Prueba de desempeño, 40% Portafolio de evidencias.
+- **2026-11-15 — Arnés del repositorio:** Se crearon `GEMINI.md` y `MEMORY.md` (límite máximo de 50 líneas).
+- **2026-11-15 — Estructura de archivos por tema:** Convención `X-unidad.md` y `X-Y-subtema.md` en minúsculas sin acentos; subtemas de tercer nivel como `##`. Archivos creados para las unidades 1 a 6 y reubicados en `notas/`.
+- **2026-11-15 — Directorio de figuras:** Se creó `figuras/` y se añadió `figuras/logos/` con los logotipos institucionales.
+- **2026-11-15 — Exclusión de `.referencia`:** No versionar ni listar `.referencia` como contenido del repositorio.
 
 ## Pendientes / Próximos Pasos
 
-- Definir estructura de carpetas por unidad (ej. `01-sistemas-numericos/`, `02-conjuntos/`, etc.) cuando se comience a agregar material didáctico.
-- Elaborar guías de ejercicios y rúbricas para el portafolio de evidencias y las pruebas de desempeño.
+- Desarrollar apuntes, ejemplos y ejercicios dentro de cada archivo `X-Y-*.md`.
+- Elaborar rúbricas para el portafolio de evidencias y las pruebas de desempeño.

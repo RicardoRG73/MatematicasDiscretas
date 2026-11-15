@@ -148,3 +148,34 @@ El alumno aplica conocimientos matemáticos esenciales, desarrollando modelos ma
 | Prueba de Desempeño | 50% |
 | Portafolio de Evidencias | 40% |
 | **Total** | **100%** |
+
+---
+
+## Bibliografía Recomendada
+
+1. **Rosen, K. H.** (2004). *Matemática discreta y sus aplicaciones* (5.ª ed.). McGraw-Hill. ISBN: `978-84-481-4073-1`.
+2. **Johnsonbaugh, R.** (2005). *Matemáticas discretas* (6.ª ed.). Pearson Educación / Prentice Hall. ISBN: `970-26-0637-3`.
+3. **Grimaldi, R. P.** (1998). *Matemáticas discreta y combinatoria: Una introducción con aplicaciones* (3.ª ed.). Addison-Wesley / Pearson Educación. ISBN: `978-968-444-324-2`.
+4. **Epp, S. S.** (2012). *Matemáticas discretas con aplicaciones* (4.ª ed.). Cengage Learning. ISBN: `978-607-481-621-1`.
+5. **Jiménez Murillo, J. A.** (2012). *Matemáticas para la computación* (2.ª ed.). Alfaomega. ISBN: `978-607-707-719-0`.
+
+---
+
+## Estructura del Repositorio
+
+```text
+.
+├── README.md           # Temario oficial, actividades, criterios de evaluación y estructura
+├── GEMINI.md           # Convenciones y reglas de trabajo para el agente
+├── MEMORY.md           # Memoria persistente del proyecto (máx. 50 líneas)
+├── LICENSE             # Licencia del repositorio
+├── figuras/            # Imágenes, diagramas y recursos gráficos del curso
+│   └── logos/          # Logotipos institucionales (Ing-Sistemas.png, uvaq.png, uvaq.svg)
+└── notas/              # Apuntes organizados por unidad (X-unidad.md) y subtema (X-Y-subtema.md)
+    ├── 1-sistemas-numericos.md ... 1-5-aplicacion-de-los-sistemas-numericos-en-la-computacion.md
+    ├── 2-conjuntos.md ... 2-4-aplicaciones-de-conjuntos.md
+    ├── 3-logica-matematica.md ... 3-2-logica-de-predicados.md
+    ├── 4-algebra-booleana.md ... 4-3-aplicacion-del-algebra-booleana.md
+    ├── 5-relaciones.md ... 5-5-aplicaciones-de-las-relaciones-y-las-funciones-en-la-computacion.md
+    └── 6-teoria-de-grafos.md ... 6-6-aplicaciones-de-grafos-y-arboles.md
+```

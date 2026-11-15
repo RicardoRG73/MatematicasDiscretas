@@ -1,0 +1,24 @@
+# 6. Teoría de Grafos
+
+- **Competencia(s) a desarrollar:**
+  - Aplica los conceptos de grafos, resolviendo problemas relacionados con recorrido y búsqueda, para implementar soluciones en redes y estructuras de datos.
+- **Duración:** 10 horas
+- **Subtemas:**
+  - 6.1 Elementos y características de los grafos.
+    - 6.1.1 Componentes de un grafo (vértices, aristas, lazos, valencia)
+    - 6.1.2 Tipos de grafos (Simples, completos, bipartidos, planos, conexos, ponderados)
+  - 6.2 Representación de los grafos
+    - 6.2.1 Matemática
+    - 6.2.2 Computacional
+  - 6.3 Algoritmos de recorrido y búsqueda
+    - 6.3.1 El camino más corto
+    - 6.3.2 A lo ancho
+    - 6.3.3 En profundidad
+  - 6.4 Árboles.
+    - 6.4.1 Componentes (raíz, hoja, padre, hijo, descendientes, ancestros)
+    - 6.4.2 Propiedades
+    - 6.4.3 Clasificación (altura, número de nodos)
+    - 6.4.4 Árboles con peso
+    - 6.4.5 Recorrido de un árbol: Preorden, Inorden, Postorden
+  - 6.5 Redes (teorema de flujo máximo, teorema de flujo mínimo, pareos y redes de Petri)
+  - 6.6 Aplicaciones de grafos y árboles.
