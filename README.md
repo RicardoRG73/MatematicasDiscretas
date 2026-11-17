@@ -171,11 +171,11 @@ El alumno aplica conocimientos matemáticos esenciales, desarrollando modelos ma
 ├── LICENSE             # Licencia del repositorio
 ├── figuras/            # Imágenes, diagramas y recursos gráficos del curso
 │   └── logos/          # Logotipos institucionales (Ing-Sistemas.png, uvaq.png, uvaq.svg)
-└── notas/              # Apuntes organizados por unidad (X-unidad.md) y subtema (X-Y-subtema.md)
-    ├── 1-sistemas-numericos.md ... 1-5-aplicacion-de-los-sistemas-numericos-en-la-computacion.md
-    ├── 2-conjuntos.md ... 2-4-aplicaciones-de-conjuntos.md
-    ├── 3-logica-matematica.md ... 3-2-logica-de-predicados.md
-    ├── 4-algebra-booleana.md ... 4-3-aplicacion-del-algebra-booleana.md
-    ├── 5-relaciones.md ... 5-5-aplicaciones-de-las-relaciones-y-las-funciones-en-la-computacion.md
-    └── 6-teoria-de-grafos.md ... 6-6-aplicaciones-de-grafos-y-arboles.md
+└── notas/              # Apuntes organizados por unidad (X-0-unidad.md) y subtema (X-Y-subtema.md)
+    ├── 1-0-sistemas-numericos.md ... 1-5-aplicacion-de-los-sistemas-numericos-en-la-computacion.md
+    ├── 2-0-conjuntos.md ... 2-4-aplicaciones-de-conjuntos.md
+    ├── 3-0-logica-matematica.md ... 3-2-logica-de-predicados.md
+    ├── 4-0-algebra-booleana.md ... 4-3-aplicacion-del-algebra-booleana.md
+    ├── 5-0-relaciones.md ... 5-5-aplicaciones-de-las-relaciones-y-las-funciones-en-la-computacion.md
+    └── 6-0-teoria-de-grafos.md ... 6-6-aplicaciones-de-grafos-y-arboles.md
 ```
