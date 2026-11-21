@@ -174,15 +174,34 @@ python3 generar_pdfs.py --forzar        # Regenera todos los PDF desde cero
 
 ---
 
+## Diapositivas (Marp)
+
+La carpeta [`diapositivas/`](diapositivas/) contiene las **31 presentaciones en formato Marp** correspondientes a las unidades y subtemas de `notas/`, controladas de manera centralizada desde [`diapositivas/tema-discretas.css`](diapositivas/tema-discretas.css) (`theme: discretas`, formato `16:9`, tamaño base `31px` y la paleta de color de los PDF). La configuración en [`.vscode/settings.json`](.vscode/settings.json) habilita la vista previa directa con **Marp for VS Code**, y [`generar_diapositivas.py`](generar_diapositivas.py) permite exportarlas en lote (requiere `marp` o `npx` con Node.js y un navegador como Firefox, Chrome o Edge):
+
+```bash
+python3 generar_diapositivas.py                   # Exporta a PDF solo diapositivas modificadas
+python3 generar_diapositivas.py 1-1 3-2           # Exporta presentaciones específicas
+python3 generar_diapositivas.py --unidad 4        # Exporta toda la Unidad 4 a PDF
+python3 generar_diapositivas.py --formato pptx    # Exporta a PowerPoint (también soporta html)
+python3 generar_diapositivas.py --forzar          # Regenera todas las salidas desde cero
+```
+
+---
+
 ## Estructura del Repositorio
 
 ```text
 .
-├── README.md           # Temario oficial, actividades, criterios de evaluación y estructura
-├── GEMINI.md           # Convenciones y reglas de trabajo para el agente
-├── MEMORY.md           # Memoria persistente del proyecto (máx. 50 líneas)
-├── LICENSE             # Licencia del repositorio
-├── generar_pdfs.py     # Script Python (Pandoc + XeLaTeX) para generar los PDF de notas/
+├── README.md                 # Temario oficial, actividades, criterios de evaluación y estructura
+├── GEMINI.md                 # Convenciones y reglas de trabajo para el agente
+├── MEMORY.md                 # Memoria persistente del proyecto (máx. 50 líneas)
+├── LICENSE                   # Licencia del repositorio
+├── .vscode/
+│   └── settings.json         # Registro del tema Marp personalizado en el editor
+├── generar_pdfs.py           # Script Python (Pandoc + XeLaTeX) para generar los PDF de notas/
+├── generar_diapositivas.py   # Script Python (Marp CLI) para exportar diapositivas/ a PDF/PPTX/HTML
+├── diapositivas/             # Presentaciones Marp (tema-discretas.css + 31 archivos .md)
+│   └── pdf/                  # Versión en PDF de las 31 presentaciones del curso
 ├── figuras/            # Imágenes, diagramas y recursos gráficos del curso
 │   └── logos/          # Logotipos institucionales (Ing-Sistemas.png, uvaq.png, uvaq.svg)
 └── notas/              # Apuntes organizados por unidad (X-0-unidad.md) y subtema (X-Y-subtema.md)

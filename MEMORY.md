@@ -15,6 +15,8 @@ Registro persistente del estado, decisiones y convenciones del repositorio **Mat
 - `figuras/`: Directorio con 31 scripts generadores en Python (`.py`), sus 31 figuras (`.png`) y `figuras/logos/`.
 - `notas/`: Apuntes completos de las **6 unidades del temario** (`1-0` a `6-0` y todos sus subtemas `1-1` a `6-6`) con desarrollo teórico, figuras ilustrativas, ejemplos de práctica resueltos paso a paso y ejercicios de tarea con solución oculta en comentarios HTML (`<!-- ... -->`), más sus versiones compiladas en `notas/pdf/`.
 - `generar_pdfs.py`: Script en Python (Pandoc + filtro Lua + XeLaTeX) para regenerar los PDF de `notas/` manteniendo el tema de color del curso.
+- `diapositivas/`: 31 presentaciones Marp (`theme: discretas`, `16:9`, `math: mathjax`) controladas desde `diapositivas/tema-discretas.css` (letra base `31px`, paleta de los PDF), registradas en `.vscode/settings.json` y exportadas en `diapositivas/pdf/`.
+- `generar_diapositivas.py`: Script en Python (Marp CLI con `--theme-set`) para exportar `diapositivas/` en lote a PDF, PPTX o HTML detectando cambios en `.md`, figuras y CSS.
 
 ## Decisiones y Cambios Clave
 
@@ -27,6 +29,7 @@ Registro persistente del estado, decisiones y convenciones del repositorio **Mat
 - **2026-11-16 — Desarrollo de la Unidad 6 (`6-1` a `6-6`):** Apuntes completos de Teoría de Grafos, Árboles y Redes (`notas/6-0-teoria-de-grafos.md` y `notas/6-1` a `6-6`) con ejemplos resueltos, tareas comentadas y 5 scripts/figuras en `figuras/`.
 - **2026-11-16 — Autoría de commits y PRs:** Se estableció en `GEMINI.md` que los commits y *pull requests* deben llevar exclusivamente autoría humana, excluyendo cualquier autoría o coautoría de IA.
 - **2026-11-20 — Script generador de PDFs (`generar_pdfs.py`):** Se creó el script autocontenido en Python usando Pandoc + filtro Lua + XeLaTeX con la paleta original (`#0F172A`, `#1E293B`, `#1E3A8A`, `#2563EB`, `#BE123C`, `#EFF6FF`, `#F1F5F9`, `#F8FAFC`, `#CBD5E1`) e incremento automático por `mtime`.
+- **2026-11-20 — Diapositivas Marp (`diapositivas/`) y exportador (`generar_diapositivas.py`):** Se generaron las 31 presentaciones con tema centralizado (`tema-discretas.css`, `.vscode/settings.json`, paleta de los PDF y `31px`) más el script incremental para exportarlas vía Marp CLI.
 
 ## Pendientes / Próximos Pasos
 
