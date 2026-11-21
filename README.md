@@ -161,6 +161,19 @@ El alumno aplica conocimientos matemáticos esenciales, desarrollando modelos ma
 
 ---
 
+## Generación de PDFs
+
+El script [`generar_pdfs.py`](generar_pdfs.py) compila las notas de `notas/*.md` a PDF en `notas/pdf/*.pdf` conservando la paleta de color del curso (y omitiendo las soluciones comentadas de los ejercicios de tarea). Requiere `Python 3`, `Pandoc` (o `Quarto`) y `XeLaTeX`.
+
+```bash
+python3 generar_pdfs.py                 # Compila solo notas nuevas o modificadas (incluidas sus figuras)
+python3 generar_pdfs.py 1-1 3-2         # Compila notas específicas
+python3 generar_pdfs.py --unidad 3      # Compila todas las notas de la Unidad 3
+python3 generar_pdfs.py --forzar        # Regenera todos los PDF desde cero
+```
+
+---
+
 ## Estructura del Repositorio
 
 ```text
@@ -169,9 +182,11 @@ El alumno aplica conocimientos matemáticos esenciales, desarrollando modelos ma
 ├── GEMINI.md           # Convenciones y reglas de trabajo para el agente
 ├── MEMORY.md           # Memoria persistente del proyecto (máx. 50 líneas)
 ├── LICENSE             # Licencia del repositorio
+├── generar_pdfs.py     # Script Python (Pandoc + XeLaTeX) para generar los PDF de notas/
 ├── figuras/            # Imágenes, diagramas y recursos gráficos del curso
 │   └── logos/          # Logotipos institucionales (Ing-Sistemas.png, uvaq.png, uvaq.svg)
 └── notas/              # Apuntes organizados por unidad (X-0-unidad.md) y subtema (X-Y-subtema.md)
+    ├── pdf/            # Versión en PDF de las 31 notas del curso
     ├── 1-0-sistemas-numericos.md ... 1-5-aplicacion-de-los-sistemas-numericos-en-la-computacion.md
     ├── 2-0-conjuntos.md ... 2-4-aplicaciones-de-conjuntos.md
     ├── 3-0-logica-matematica.md ... 3-2-logica-de-predicados.md
